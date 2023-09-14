@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Digi It Consult</title>
+
+    <!-- slider stylesheet -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css"/>
+
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+
+    <!-- fonts style -->
+    <link href="https://fonts.googleapis.com/css?family=Dosis:400,500|Poppins:400,700&amp;display=swap" rel="stylesheet"/>
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet"/>
+    <!-- responsive style -->
+    <link href="css/responsive.css" rel="stylesheet"/>
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/10.3.1/firebase-app-compat.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/10.3.1/firebase-auth-compat.js"></script>
+    <script defer src="/__/firebase/10.3.1/firebase-database-compat.js"></script>
+    <script defer src="/__/firebase/10.3.1/firebase-firestore-compat.js"></script>
+    <script defer src="/__/firebase/10.3.1/firebase-functions-compat.js"></script>
+    <script defer src="/__/firebase/10.3.1/firebase-messaging-compat.js"></script>
+    <script defer src="/__/firebase/10.3.1/firebase-storage-compat.js"></script>
+    <script defer src="/__/firebase/10.3.1/firebase-analytics-compat.js"></script>
+    <script defer src="/__/firebase/10.3.1/firebase-remote-config-compat.js"></script>
+    <script defer src="/__/firebase/10.3.1/firebase-performance-compat.js"></script>
+    <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+
+    <style media="screen">
+      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
+      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
+      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
+      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
+      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
+      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
+      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
+      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
+      @media (max-width: 600px) {
+        body, #message { margin-top: 0; background: white; box-shadow: none; }
+        body { border-top: 16px solid #ffa100; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="hero_area">
+      <!-- header section strats -->
+      <header class="header_section">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-8">
+              <nav class="navbar navbar-expand-lg custom_nav-container ">
+                <a class="navbar-brand" href="index.html">
+                  <span>
+                    Digi It Consult
+                  </span>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+  
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <div class="d-flex  flex-column flex-lg-row align-items-center">
+                    <ul class="navbar-nav  ">
+                      <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="about.html">About </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="service.html">Services </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- end header section -->
+      <!-- slider section -->
+      <section class=" slider_section ">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">01</li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1">02</li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2">03</li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-5 col-md-6">
+                    <div class="slider_detail-box">
+                      <h1>
+                        Start <br/>
+                        Web Development <br/>
+                        With Our Company
+                      </h1>
+                      <p>
+                        Our website development can create your dream website. We design engaging and user-friendly websites that
+                        improve the customer experience, we work with you to understand your business goals and preferences.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="slider_img-box">
+                      <img src="images/slider-img.png" alt=""/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-5 col-md-6">
+                    <div class="slider_detail-box">
+                      <h1>
+                        Start <br/>
+                        Mobile Development <br/>
+                        With Our Company
+                      </h1>
+                      <p>
+                        Our company has over 15 years of experience developing apps and digital solutions and have worked with a range
+                        of businesses, from small start-up looking to launch their first app to established, multinational companies that
+                        want to create an app that will extend their brand and improve their customer's experience.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="slider_img-box">
+                      <img src="images/slider-img.png" alt=""/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-5 col-md-6">
+                    <div class="slider_detail-box">
+                      <h1>
+                        Start <br/>
+                        Game development <br/>
+                        With our Company
+                      </h1>
+                      <p>
+                        We are a team of experienced game developers who are passionate about creating games that are both fun and engaging. We have a proven track record of success, having developed games for a variety of platforms, including mobile, console, and PC.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="slider_img-box">
+                      <img src="images/slider-img.png" alt=""/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel_btn-container">
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- end slider section -->
+    </div>
+  
+    <!-- welcome section -->
+    <section class="welcome_section layout_padding">
+      <div class="container">
+        <div class="custom_heading-container">
+          <h2>
+            Welcome To Our Company
+          </h2>
+        </div>
+        <div class="layout_padding2">
+          <div class="img-box">
+            <img src="images/welcome.png" alt=""/>
+          </div>
+          <div class="detail-box">
+            <p>
+              We're a software development company that's been in business for over 10 years. We're passionate about creating innovative and user-friendly software solutions that help businesses succeed.
+  
+              Our team of experienced developers and designers has a proven track record of delivering high-quality projects on time and within budget. We're committed to providing our clients with the best possible service, and we're always looking for new ways to improve our offerings.
+  
+              Whether you're a small business or a large enterprise, we can help you develop the software you need to succeed. Contact us today to learn more about our services.
+            </p>
+          </div>
+        </div>
+  
+      </div>
+    </section>
+    <!-- end welcome section -->
+  
+    <!-- service section -->
+  
+    <section class="service_section">
+      <div class="container">
+        <div class="custom_heading-container">
+          <h2>
+            Our Services
+          </h2>
+        </div>
+        <div class="service_container layout_padding2">
+          <div class="service_box">
+            <div class="img-box">
+              <img src="images/onesocialnetwork.png" alt="" width="342" height="257" />
+            </div>
+            <div class="detail-box">
+              <h4>
+                Web <br/>
+                Development
+              </h4>
+              <p>
+                We specialize in developing custom web applications that meet the specific needs of our clients. Our team of experienced web developers has a proven track record of delivering high-quality projects on time and within budget.
+              </p>
+            </div>
+          </div>
+          <div class="service_box">
+            <div class="img-box">
+              <img src="images/coolleaf.jpg" alt="" width="342" height="257" />
+            </div>
+            <div class="detail-box">
+              <h4>
+                Mobile <br/>
+                Development
+              </h4>
+              <p>
+                We develop high-quality mobile applications for iOS and Android devices. Our team of experienced mobile developers has a proven track record of delivering successful projects on time and within budget.
+              </p>
+            </div>
+          </div>
+          <div class="service_box">
+            <div class="img-box">
+              <img src="images/game.jpg" alt="" width="342" height="257" />
+            </div>
+            <div class="detail-box">
+              <h4>
+                Game <br/>
+                Development
+              </h4>
+              <p>
+                We develop high-quality games for PC, consoles, and mobile devices. Our team of experienced game developers has a proven track record of delivering successful projects on time and within budget.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <!-- end service section -->
+    <!--problem section -->
+    <section class="problem_section layout_padding">
+      <div class="container">
+        <div class="custom_heading-container">
+          <h2>
+            Do you have any business problem ?
+          </h2>
+        </div>
+        <div class="layout_padding2">
+          <div class="img-box">
+            <img src="images/problem.jpg" alt=""/>
+          </div>
+          <div class="detail-box">
+            <p>
+              We understand that every business is unique and has its own set of challenges. That's why we offer a free consultation to discuss your specific needs and see how we can help.
+            </p>
+          </div>
+        </div>
+  
+      </div>
+    </section>
+    <!-- end problem section -->
+    <!-- why section -->
+  
+    <section class="why_section layout_padding">
+      <div class="container">
+        <div class="custom_heading-container">
+          <h2>
+            Why Choose Us
+          </h2>
+        </div>
+        <div class="content-container">
+          <p>
+            There are many reasons why you should choose us to develop your software solution. Here are just a few:
+          </p>
+          <div class="row">
+            <div class="col-md-3 col-sm-6">
+              <div class="img-box">
+                <img src="images/smiley.png" alt=""/>
+              </div>
+              <div class="detail-box">
+                <h3>
+                  99%
+                </h3>
+                <h6>
+                  SATISFIED CLIENTS
+                </h6>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="img-box">
+                <img src="images/monitor.png" alt=""/>
+              </div>
+              <div class="detail-box">
+                <h3>
+                  4700+
+                </h3>
+                <h6>
+                  AWESOME planing
+                </h6>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="img-box">
+                <img src="images/multiple-users-silhouette.png" alt=""/>
+              </div>
+              <div class="detail-box">
+                <h3>
+                  4500+
+                </h3>
+                <h6>
+                  CLIENTS
+                </h6>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="img-box">
+                <img src="images/bar-chart.png" alt=""/>
+              </div>
+              <div class="detail-box">
+                <h3>
+                  19000+
+                </h3>
+                <h6>
+                  DAILY business
+                </h6>
+              </div>
+            </div>
+          </div>
+          <p>
+            We are confident that we can help you achieve your business goals. Contact us today to learn more about how we can partner with you.
+          </p>
+        </div>
+      </div>
+    </section>
+  
+  
+    <!-- end why section -->
+  
+    <!-- client section -->
+    <section class="client_section layout_padding">
+      <div class="container">
+        <h2>
+          What Our Clients Says
+        </h2>
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="client_container layout_padding2">
+                <div class="client_text">
+                  <p>
+                    I'm so glad I chose your company to develop my software. You guys did a great job and I'm really happy with the results.
+                    Your team was very responsive and always willing to go the extra mile. I felt like I was working with a partner, not just a vendor.
+                  </p>
+                </div>
+                <div class="detail-box">
+                  <div class="img-box">
+                    <img src="images/Kristina.jfif" alt=""/>
+                  </div>
+                  <div class="name">
+                    <h5>
+                      Kristina O
+                    </h5>
+                    <p>
+                      BINMILE
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="client_container layout_padding2">
+                <div class="client_text">
+                  <p>
+                    The software you developed for us has helped us to improve our efficiency and save money. We're very grateful for your help.
+                    I was impressed with your team's knowledge and expertise. They were able to understand my needs and deliver a solution that met my expectations.
+                  </p>
+                </div>
+                <div class="detail-box">
+                  <div class="img-box">
+                    <img src="images/Kevin.jfif" alt=""/>
+                  </div>
+                  <div class="name">
+                    <h5>
+                      Kevin H
+                    </h5>
+                    <p>
+                      CODETRIBE
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="client_container layout_padding2">
+                <div class="client_text">
+                  <p>
+                    I would definitely recommend your company to anyone looking for a software development partner.
+                    They were a pleasure to work with and the software they developed has been a huge success for our business.
+                  </p>
+                </div>
+                <div class="detail-box">
+                  <div class="img-box">
+                    <img src="images/Anna.jfif" alt=""/>
+                  </div>
+                  <div class="name">
+                    <h5>
+                      Anna G
+                    </h5>
+                    <p>
+                      INNOWISE
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+  
+      </div>
+    </section>
+    <!-- end client section -->
+    <!-- contact section -->
+    <section class="contact_section layout_padding">
+      <div class="container contact_heading">
+        <h2>
+          Contact Us
+        </h2>
+        <p>
+          psum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        </p>
+      </div>
+      <div class="container">
+        <form>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputName4">Name</label>
+              <input type="text" class="form-control" id="inputName4"/>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputEmail4">Email</label>
+              <input type="email" class="form-control" id="inputEmail4"/>
+            </div>
+  
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputNumber4">Phone number</label>
+              <input type="tel" class="form-control" id="inputNumber4"/>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputState">Select Service</label>
+              <select id="inputState" class="form-control">
+                <option selected=""></option>
+                <option>Web Development</option>
+                <option>Mobile Development</option>
+                <option>Game Development</option>
+                <option>Other</option>
+              </select>
+            </div>
+  
+          </div>
+          <div class="form-group">
+            <label for="inputMessage">Message</label>
+            <input type="text" class="form-control" id="inputMessage" placeholder=""/>
+          </div>
+      </div>
+  
+      <div class="d-flex justify-content-center">
+        <button type="submit" class="">Send</button>
+      </div>
+      </form>
+  
+    </section>
+  
+  
+    <!-- end contact section -->
+    <div class="footer_bg">
+      <!-- info section -->
+      <section class="info_section layout_padding2-bottom">
+        <div class="container">
+          <h3 class="">
+            Digi It Consult
+          </h3>
+        </div>
+        <div class="container info_content">
+  
+          <div>
+            <div class="row">
+              <div class="col-md-6 col-lg-4">
+                <div class="d-flex">
+                  <h5>
+                    Useful Link
+                  </h5>
+                </div>
+                <div class="d-flex ">
+                  <ul>
+                    <li>
+                      <a href="about.html">
+                        About Us
+                      </a>
+                    </li>
+                    <li>
+                      <a href="service.html">
+                        Services
+                      </a>
+                    </li>
+                    <li>
+                      <a href="contact.html">
+                        Contact Us
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div class="d-flex">
+                  <h5>
+                    The Services
+                  </h5>
+                </div>
+                <div class="d-flex ">
+                  <ul>
+                    <li>
+                      <a href="">
+                        Web Development
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        Mobile Development
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        Game Development
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        DevOps Maintain
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        QA Automation Testing
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div class="d-flex">
+                  <h5>
+                    Contact Us
+                  </h5>
+                </div>
+                <div class="d-flex ">
+                  <ul>
+                    <li>
+                      <a href="mailto:hello@digiitconsult.com">Email: hello@digiitconsult.com</a>
+                    </li>
+                    <li>
+                      <a href="tel:+6281225737313">Mobile: +6281225737313</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+      </section>
+  
+      <!-- end info_section -->
+  
+      <!-- footer section -->
+      <section class="container-fluid footer_section">
+        <p>
+          © 2023 All Rights Reserved.
+        </p>
+      </section>
+      <!-- footer section -->
+    </div>
+  
+  
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const loadEl = document.querySelector('#load');
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+        // // The Firebase SDK is initialized and available here!
+        //
+        // firebase.auth().onAuthStateChanged(user => { });
+        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+        // firebase.firestore().doc('/foo/bar').get().then(() => { });
+        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
+        // firebase.messaging().requestPermission().then(() => { });
+        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+        // firebase.analytics(); // call to activate
+        // firebase.analytics().logEvent('tutorial_completed');
+        // firebase.performance(); // call to activate
+        //
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
+        try {
+          let app = firebase.app();
+          let features = [
+            'auth', 
+            'database', 
+            'firestore',
+            'functions',
+            'messaging', 
+            'storage', 
+            'analytics', 
+            'remoteConfig',
+            'performance',
+          ].filter(feature => typeof app[feature] === 'function');
+          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
+        } catch (e) {
+          console.error(e);
+          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
+        }
+      });
+    </script>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyCC699zYQ87uTuKeRSqv1SMj8k02vQW6vE",
+        authDomain: "digi-it-consult.firebaseapp.com",
+        projectId: "digi-it-consult",
+        storageBucket: "digi-it-consult.appspot.com",
+        messagingSenderId: "81530860859",
+        appId: "1:81530860859:web:94be7d7ff9fbb255c0731e",
+        measurementId: "G-SL64TY9GYY"
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
+  </body>
+</html>
